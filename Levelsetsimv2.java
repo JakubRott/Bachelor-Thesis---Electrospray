@@ -5,7 +5,7 @@
 import com.comsol.model.*;
 import com.comsol.model.util.*;
 
-/** Model exported on Nov 11 2026, 17:29 by COMSOL 6.3.0.290. */
+/** Model exported on Nov 16 2026, 14:46 by COMSOL 6.3.0.290. */
 public class Levelsetsimv2 {
 
   public static Model run() {
@@ -4113,6 +4113,8 @@ public class Levelsetsimv2 {
     model.component("comp1").variable("var2").descr("Trz", "");
     model.component("comp1").variable("var2").set("Tpp", "-0.5*epsilon0_const*epsr*(es.Er^2+es.Ez^2)");
     model.component("comp1").variable("var2").descr("Tpp", "");
+
+    model.label("Level set sim.v2.mph");
 
     return model;
   }
